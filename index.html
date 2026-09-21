@@ -10,8 +10,8 @@
   .tabframe { width: 100%; height: calc(100vh - 50px); border: none; }
 </style></head>
 <body>
-  <div class="tabbar"><button class="tabbtn" id="btn-thai" onclick="showTab('thai')">🇹🇭 Thai</button><button class="tabbtn" id="btn-us" onclick="showTab('us')">🇺🇸 US</button><button class="tabbtn" id="btn-crypto" onclick="showTab('crypto')">₿ Crypto</button></div>
-  <iframe id="frame-thai" class="tabframe" src="thai_screener_dashboard.html" style="display:none"></iframe><iframe id="frame-us" class="tabframe" src="us_screener_dashboard.html" style="display:none"></iframe><iframe id="frame-crypto" class="tabframe" src="crypto_screener_dashboard.html" style="display:none"></iframe>
+  <div class="tabbar"><button class="tabbtn" id="btn-thai" onclick="showTab('thai')">🇹🇭 Thai</button><button class="tabbtn" id="btn-us" onclick="showTab('us')">🇺🇸 US</button><button class="tabbtn" id="btn-crypto" onclick="showTab('crypto')">₿ Crypto</button><button class="tabbtn" id="btn-gold" onclick="showTab('gold')">🥇 Gold</button></div>
+  <iframe id="frame-thai" class="tabframe" src="thai_screener_dashboard.html" style="display:none"></iframe><iframe id="frame-us" class="tabframe" src="us_screener_dashboard.html" style="display:none"></iframe><iframe id="frame-crypto" class="tabframe" src="crypto_screener_dashboard.html" style="display:none"></iframe><iframe id="frame-gold" class="tabframe" src="gold_dashboard.html" style="display:none"></iframe>
   <script>
     function showTab(key) {
       document.querySelectorAll('.tabframe').forEach(f => f.style.display = 'none');
