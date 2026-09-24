@@ -42,3 +42,4 @@ this repo) — this repo only holds the published output.
 
 - `index.html` — the combined dashboard (tabs: Thai / US / Crypto)
 - `thai_screener_dashboard.html`, `us_screener_dashboard.html`, `crypto_screener_dashboard.html` — the individual dashboards, also reachable directly
+x
