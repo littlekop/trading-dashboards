@@ -55,7 +55,7 @@
   <div class="topnav"><a href="combined_dashboard.html" class="navlink">🌐 All Markets</a><a href="thai_screener_dashboard.html" class="navlink">🇹🇭 Thai</a><a href="us_screener_dashboard.html" class="navlink">🇺🇸 US</a><a href="crypto_screener_dashboard.html" class="navlink active">₿ Crypto</a><a href="gold_dashboard.html" class="navlink">🥇 Gold</a></div>
   <div class="page">
   <h1>Crypto Screener Dashboard</h1>
-  <div class="meta">Last run: 2026-09-24 19:00 SE Asia Standard Time · Universe: top 250 coins by market cap (CoinGecko)</div>
+  <div class="meta">Last run: 2026-09-25 08:00 SE Asia Standard Time · Universe: top 250 coins by market cap (CoinGecko)</div>
   <div class="note">Crypto has no earnings/P/E/analyst targets, so this uses different proxies than the Thai/US screeners:
   <b>30d market cap change</b> stands in for earnings growth, <b>volume/market-cap ratio</b> stands in for revenue growth
   (real trading activity vs. a dead coin), and <b>distance from all-time high</b> is shown as context only — it is
@@ -83,26 +83,26 @@
         <th class="num" onclick="sortTable(7)">From ATH<span class="arrow">↕</span></th>
         <th onclick="sortTable(8)">Red Flags<span class="arrow">↕</span></th></tr></thead>
     <tbody>
-        <tr class="new-row">
-          <td>LIT<span class="badge">NEW</span></td>
-          <td>Lighter</td>
-          <td class="num">$4.9600</td>
-          <td class="num">-3.8%</td>
-          <td class="num">+2.1%</td>
-          <td class="num">+45.8% <div class="barwrap"><div class="bar" style="width:15.3%;background:#1a9850;float:left"></div></div></td>
-          <td class="num">12.0%</td>
-          <td class="num">-37.0%</td>
-          <td class="flag-none">none</td>
-        </tr>
         <tr class="">
           <td>DASH</td>
           <td>Dash</td>
-          <td class="num">$59.2800</td>
-          <td class="num">-5.2%</td>
-          <td class="num">+3.3%</td>
-          <td class="num">+42.5% <div class="barwrap"><div class="bar" style="width:14.2%;background:#1a9850;float:left"></div></div></td>
-          <td class="num">26.6%</td>
-          <td class="num">-96.0%</td>
+          <td class="num">$63.1300</td>
+          <td class="num">+9.9%</td>
+          <td class="num">+3.9%</td>
+          <td class="num">+64.7% <div class="barwrap"><div class="bar" style="width:21.6%;background:#1a9850;float:left"></div></div></td>
+          <td class="num">21.8%</td>
+          <td class="num">-95.8%</td>
+          <td class="flag-warn">still_80pct_plus_below_ath_may_never_recover</td>
+        </tr>
+        <tr class="new-row">
+          <td>DOT<span class="badge">NEW</span></td>
+          <td>Polkadot</td>
+          <td class="num">$1.1600</td>
+          <td class="num">+5.4%</td>
+          <td class="num">+7.5%</td>
+          <td class="num">+34.2% <div class="barwrap"><div class="bar" style="width:11.4%;background:#1a9850;float:left"></div></div></td>
+          <td class="num">9.4%</td>
+          <td class="num">-97.9%</td>
           <td class="flag-warn">still_80pct_plus_below_ath_may_never_recover</td>
         </tr></tbody>
   </table>
@@ -284,6 +284,20 @@
     <thead><tr><th>Date</th><th>Ticker</th><th>Name</th><th>Event</th><th>Reason</th></tr></thead>
     <tbody>
         <tr>
+          <td>2026-09-25</td>
+          <td>LIT</td>
+          <td>Lighter</td>
+          <td class="event-removed">REMOVED</td>
+          <td>price broke out up +8.7% over 7d (outside +/-8% band)</td>
+        </tr>
+        <tr>
+          <td>2026-09-25</td>
+          <td>DOT</td>
+          <td>Polkadot</td>
+          <td class="event-added">ADDED</td>
+          <td>30d mcap change +34.2%, vol/mcap ratio 9.4%, 7d price change +7.5% within band</td>
+        </tr>
+        <tr>
           <td>2026-09-24</td>
           <td>LIT</td>
           <td>Lighter</td>
@@ -369,31 +383,24 @@
         </tr>
         <tr>
           <td>2026-09-21</td>
-          <td>ICP</td>
-          <td>Internet Computer</td>
-          <td class="event-added">ADDED</td>
-          <td>30d mcap change +22.3%, vol/mcap ratio 5.1%, 7d price change +6.9% within band</td>
-        </tr>
-        <tr>
-          <td>2026-09-21</td>
           <td>DASH</td>
           <td>Dash</td>
           <td class="event-removed">REMOVED</td>
           <td>price broke out up +8.6% over 7d (outside +/-8% band)</td>
         </tr>
         <tr>
-          <td>2026-09-20</td>
-          <td>POL</td>
-          <td>POL (ex-MATIC)</td>
+          <td>2026-09-21</td>
+          <td>ICP</td>
+          <td>Internet Computer</td>
           <td class="event-added">ADDED</td>
-          <td>30d mcap change +28.0%, vol/mcap ratio 7.0%, 7d price change +7.9% within band</td>
+          <td>30d mcap change +22.3%, vol/mcap ratio 5.1%, 7d price change +6.9% within band</td>
         </tr>
         <tr>
           <td>2026-09-20</td>
-          <td>JUP</td>
-          <td>Jupiter</td>
-          <td class="event-removed">REMOVED</td>
-          <td>price broke out up +16.0% over 7d (outside +/-8% band)</td>
+          <td>TAO</td>
+          <td>Bittensor</td>
+          <td class="event-added">ADDED</td>
+          <td>30d mcap change +16.7%, vol/mcap ratio 10.9%, 7d price change +7.7% within band</td>
         </tr>
         <tr>
           <td>2026-09-20</td>
@@ -462,15 +469,15 @@
           <td>2026-09-20</td>
           <td>POL</td>
           <td>POL (ex-MATIC)</td>
-          <td class="event-removed">REMOVED</td>
-          <td>price broke out up +9.4% over 7d (outside +/-8% band)</td>
+          <td class="event-added">ADDED</td>
+          <td>30d mcap change +28.0%, vol/mcap ratio 7.0%, 7d price change +7.9% within band</td>
         </tr>
         <tr>
           <td>2026-09-20</td>
-          <td>TAO</td>
-          <td>Bittensor</td>
-          <td class="event-added">ADDED</td>
-          <td>30d mcap change +16.7%, vol/mcap ratio 10.9%, 7d price change +7.7% within band</td>
+          <td>TRUMP</td>
+          <td>Official Trump</td>
+          <td class="event-removed">REMOVED</td>
+          <td>30d market cap growth fell to +13.5% (needs &gt;15%)</td>
         </tr>
         <tr>
           <td>2026-09-20</td>
@@ -509,10 +516,10 @@
         </tr>
         <tr>
           <td>2026-09-20</td>
-          <td>AVAX</td>
-          <td>Avalanche</td>
+          <td>POL</td>
+          <td>POL (ex-MATIC)</td>
           <td class="event-removed">REMOVED</td>
-          <td>price broke out up +40.3% over 7d (outside +/-8% band)</td>
+          <td>price broke out up +9.4% over 7d (outside +/-8% band)</td>
         </tr>
         <tr>
           <td>2026-09-20</td>
@@ -523,10 +530,10 @@
         </tr>
         <tr>
           <td>2026-09-20</td>
-          <td>TRUMP</td>
-          <td>Official Trump</td>
+          <td>DOT</td>
+          <td>Polkadot</td>
           <td class="event-removed">REMOVED</td>
-          <td>30d market cap growth fell to +13.5% (needs &gt;15%)</td>
+          <td>price broke out up +10.8% over 7d (outside +/-8% band)</td>
         </tr>
         <tr>
           <td>2026-09-20</td>
@@ -544,17 +551,24 @@
         </tr>
         <tr>
           <td>2026-09-20</td>
-          <td>DOT</td>
-          <td>Polkadot</td>
+          <td>JUP</td>
+          <td>Jupiter</td>
           <td class="event-removed">REMOVED</td>
-          <td>price broke out up +10.8% over 7d (outside +/-8% band)</td>
+          <td>price broke out up +16.0% over 7d (outside +/-8% band)</td>
         </tr>
         <tr>
           <td>2026-09-20</td>
-          <td>RENDER</td>
-          <td>Render</td>
+          <td>AVAX</td>
+          <td>Avalanche</td>
           <td class="event-removed">REMOVED</td>
-          <td>30d market cap growth fell to +13.6% (needs &gt;15%); price broke out up +15.4% over 7d (outside +/-8% band)</td>
+          <td>price broke out up +40.3% over 7d (outside +/-8% band)</td>
+        </tr>
+        <tr>
+          <td>2026-09-20</td>
+          <td>ADA</td>
+          <td>Cardano</td>
+          <td class="event-removed">REMOVED</td>
+          <td>30d market cap growth fell to +14.8% (needs &gt;15%); price broke out up +10.2% over 7d (outside +/-8% band)</td>
         </tr>
         <tr>
           <td>2026-09-20</td>
@@ -586,10 +600,10 @@
         </tr>
         <tr>
           <td>2026-09-20</td>
-          <td>ADA</td>
-          <td>Cardano</td>
+          <td>RENDER</td>
+          <td>Render</td>
           <td class="event-removed">REMOVED</td>
-          <td>30d market cap growth fell to +14.8% (needs &gt;15%); price broke out up +10.2% over 7d (outside +/-8% band)</td>
+          <td>30d market cap growth fell to +13.6% (needs &gt;15%); price broke out up +15.4% over 7d (outside +/-8% band)</td>
         </tr>
         <tr>
           <td>2026-09-18</td>
@@ -649,10 +663,10 @@
         </tr>
         <tr>
           <td>2026-09-18</td>
-          <td>INJ</td>
-          <td>Injective</td>
+          <td>CRV</td>
+          <td>Curve DAO</td>
           <td class="event-added">ADDED</td>
-          <td>30d mcap change +38.9%, vol/mcap ratio 14.5%, 7d price change -3.2% within band</td>
+          <td>30d mcap change +38.0%, vol/mcap ratio 14.0%, 7d price change -2.1% within band</td>
         </tr>
         <tr>
           <td>2026-09-18</td>
@@ -663,17 +677,17 @@
         </tr>
         <tr>
           <td>2026-09-18</td>
+          <td>INJ</td>
+          <td>Injective</td>
+          <td class="event-added">ADDED</td>
+          <td>30d mcap change +38.9%, vol/mcap ratio 14.5%, 7d price change -3.2% within band</td>
+        </tr>
+        <tr>
+          <td>2026-09-18</td>
           <td>ASTER</td>
           <td>Aster</td>
           <td class="event-added">ADDED</td>
           <td>30d mcap change +24.2%, vol/mcap ratio 5.2%, 7d price change +6.5% within band</td>
-        </tr>
-        <tr>
-          <td>2026-09-18</td>
-          <td>CRV</td>
-          <td>Curve DAO</td>
-          <td class="event-added">ADDED</td>
-          <td>30d mcap change +38.0%, vol/mcap ratio 14.0%, 7d price change -2.1% within band</td>
         </tr>
         <tr>
           <td>2026-09-18</td>
